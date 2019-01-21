@@ -15,10 +15,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$row = mysqli_fetch_array($result);
 
 	// START PATCH FOR SQLI
-    // $stmt_login = mysqli_prepare($conn, "SELECT * from `user` WHERE `user`= ? and `pass`= ?");
-    // mysqli_stmt_bind_param($stmt_login, "ss", $user, $pass);
-    // mysqli_stmt_execute($stmt_login);
-    // $row = mysqli_stmt_fetch($stmt_login);
+	// $stmt_login = mysqli_prepare($conn, "SELECT * from `user` WHERE `user`= ? and `pass`= ?");
+	// mysqli_stmt_bind_param($stmt_login, "ss", $username, $password);
+	// mysqli_stmt_execute($stmt_login);
+	// $row = mysqli_stmt_fetch($stmt_login);
 	// END PATCH FOR SQLI
 
 	if($row) {
